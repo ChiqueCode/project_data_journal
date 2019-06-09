@@ -1,3 +1,4 @@
+// color palette -> https://colorhunt.co/palette/147615
 // Define the width and the heights of our svg element
 // Cargo container (not changed)
 var svgWidth = 960;
@@ -198,8 +199,9 @@ d3.csv("assets/data/data.csv", function(error, data) {
     .attr("cx", d => xLinearScale(d[chosenXAxis]))
     .attr("cy", d => yLinearScale(d[chosenYAxis]))
     .attr("r", 15)
-    .attr("fill", "yellow")
-    .attr("opacity", ".5");
+    .attr("fill", "white")
+    .attr("stroke", "#6b48ff")
+    .attr("opacity", "1.3");
 
   var circletext = chartGroup.append("text")
     .selectAll("tspan")
