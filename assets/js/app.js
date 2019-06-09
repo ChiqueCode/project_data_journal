@@ -7,8 +7,8 @@ var svgHeight = 500;
 var margin = {
   top: 20,
   right: 40,
-  bottom: 80,
-  left: 50
+  bottom: 100,
+  left: 120
 };
 
 // Capture the width and height of the area that we are going to be putting the line to reflect the data
@@ -198,7 +198,7 @@ d3.csv("assets/data/data.csv", function(error, data) {
     .attr("cx", d => xLinearScale(d[chosenXAxis]))
     .attr("cy", d => yLinearScale(d[chosenYAxis]))
     .attr("r", 15)
-    .attr("fill", "blue")
+    .attr("fill", "yellow")
     .attr("opacity", ".5");
 
   var circletext = chartGroup.append("text")
@@ -223,7 +223,7 @@ d3.csv("assets/data/data.csv", function(error, data) {
   var povertyLabel = xLabelsGroup
     .append("text")
     .attr("x", 0)
-    .attr("y", 20)
+    .attr("y", 5)
     .attr("value", "poverty") // value to grab for event listener
     .classed("active", true)
     .text("Poverty Rate (%)");
@@ -231,7 +231,7 @@ d3.csv("assets/data/data.csv", function(error, data) {
   var incomeLabel = xLabelsGroup
     .append("text")
     .attr("x", 0)
-    .attr("y", 40)
+    .attr("y", 25)
     .attr("value", "income") // value to grab for event listener
     .classed("inactive", true)
     .text("Income Rate");
@@ -242,8 +242,8 @@ d3.csv("assets/data/data.csv", function(error, data) {
 
   var healthcareLabel = yLabelsGroup
     .append("text")
-    .attr("x", 0)
-    .attr("y", 40)
+    .attr("x", 20)
+    .attr("y", -20)
     .attr("dy", "1em")
     .attr("transform", "rotate(-90)")
     .attr("value", "healthcare") // value to grab for event listener
@@ -252,8 +252,8 @@ d3.csv("assets/data/data.csv", function(error, data) {
 
   var ageLabel = yLabelsGroup
     .append("text")
-    .attr("x", 0)
-    .attr("y", 40)
+    .attr("x", 20)
+    .attr("y", -30)
     .attr("transform", "rotate(-90)")
     .attr("value", "age") // value to grab for event listener
     .classed("inactive", true)
