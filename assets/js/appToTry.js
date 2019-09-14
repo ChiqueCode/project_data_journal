@@ -17,20 +17,20 @@ var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
 
 // Create an svg wrapper
-// var svg = d3
-//   .select("body") // select a body tag from html
-//   .append("svg") // append our svg
-//   .attr("width", svgWidth) // set h&w to an attr that = h&w of svg
-//   .attr("height", svgHeight);
-
 var svg = d3
-  .select("div#container")
-  .append("svg")
-  .attr("preserveAspectRatio", "xMinYMin meet")
-  .attr("viewBox", "0 0 300 300")
+  .select("#chart") // select a body tag from html
+  .append("svg") // append our svg
   .attr("width", svgWidth) // set h&w to an attr that = h&w of svg
-  .attr("height", svgHeight)
-  .classed("svg-content", true);  
+  .attr("height", svgHeight);
+
+// var svg = d3
+//   .select("#chart")
+//   .append("svg")
+//   .attr("preserveAspectRatio", "xMinYMin meet")
+//   .attr("viewBox", "0 0 300 300")
+//   .attr("width", svgWidth) // set h&w to an attr that = h&w of svg
+//   .attr("height", svgHeight)
+//   .classed("svg-content", true);  
   
 
 // Append a group tag to svg element
