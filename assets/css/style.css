@@ -1,3 +1,5 @@
+/* color Palette https://colorhunt.co/palette/135960 */
+
 .iframeContainer {
   padding: 20px;
   border: 1px solid #e3e3e3;
@@ -7,6 +9,22 @@
 html {
   position: relative;
   min-height: 100%;
+}
+
+#banner {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section.top-bar-section {
+  float: left;
+  left: 50% !important;
+  position: relative;
+}
+
+section.top-bar-section ul.left {
+  position: relative;
+  right: 50%;
 }
 
 body {
@@ -22,7 +40,7 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-  background-color: #6b4c4c;
+  background-color: #69779b;
 }
 
 #footer p {
@@ -51,7 +69,7 @@ body {
   font: 12px sans-serif;
   color: white;
   text-align: center;
-  background: #551aaf;
+  background: #69779b;
   border: 0;
   border-radius: 10px;
 }
@@ -91,7 +109,7 @@ body {
 
 .stateCircle {
   fill: #89bdd3;
-  stroke: #e3e3e3;
+  stroke: #9692af;
 }
 
 .chart {

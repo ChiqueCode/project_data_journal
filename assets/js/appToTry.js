@@ -1,6 +1,5 @@
 
 
-// color palette -> https://colorhunt.co/palette/147615
 // Define the width and the heights of our svg element
 // Cargo container (not changed)
 var svgWidth = 960;
