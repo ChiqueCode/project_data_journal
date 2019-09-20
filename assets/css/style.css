@@ -68,7 +68,7 @@ footer {
 
 .active {
   font-weight: bold;
-  fill: #000;
+  fill: #03173F;
   transition: fill 0.3s ease-out;
   text-anchor: middle;
 }
@@ -81,7 +81,7 @@ footer {
 }
 
 .inactive:hover {
-  fill: #000;
+  fill: #03173F;
   cursor: pointer;
 }
 
@@ -110,6 +110,6 @@ footer {
   color: #fff;
   text-align: center;
   text-transform: capitalize;
-  background: rgba(0, 0, 0, 0.8);
+  background: #03173F(0, 0, 0, 0.8);
   border-radius: 4px;
 }
