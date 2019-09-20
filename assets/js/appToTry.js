@@ -178,12 +178,6 @@ d3.csv("assets/data/data.csv", function(error, data) {
   var xLinearScale = xScale(data, chosenXAxis);
   var yLinearScale = yScale(data, chosenYAxis);
 
-  // Create y scale function, is not going to change 
-  // var yLinearScale = d3
-  //   .scaleLinear()
-  //   .domain([0, d3.max(data, d => d.healthcare)])
-  //   .range([height, 0]);
-
   // Create initial axis functions (axisBottom is a d3 function that creates the XAXis
   var bottomAxis = d3.axisBottom(xLinearScale);
   var leftAxis = d3.axisLeft(yLinearScale);
@@ -211,7 +205,7 @@ d3.csv("assets/data/data.csv", function(error, data) {
     .attr("cy", d => yLinearScale(d[chosenYAxis]))
     .attr("r", 15)
     .attr("fill", "white")
-    .attr("stroke", "#6b48ff")
+    .attr("stroke", "#9692af")
     .attr("opacity", "1.3");
 
   var circletext = chartGroup.append("text")
@@ -271,17 +265,6 @@ d3.csv("assets/data/data.csv", function(error, data) {
     .attr("value", "age") // value to grab for event listener
     .classed("inactive", true)
     .text("Age");
-
-  // append y axis
-  // chartGroup
-  //   .append("text")
-  //   .attr("transform", "rotate(-90)")
-  //   .attr("y", 0 - margin.left)
-  //   .attr("x", 0 - height / 2)
-  //   .attr("dy", "1em")
-  //   .classed("axis-text", true)
-  //   .text("Data");  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~???????????
-
 
   var circlesGroup = updateToolTip(chosenXAxis, chosenYAxis, circlesGroup);
 
