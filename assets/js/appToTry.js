@@ -2,7 +2,7 @@
 
 // Define the width and the heights of our svg element
 // Cargo container (not changed)
-var svgWidth = 960;
+var svgWidth = 1200;
 var svgHeight = 500;
 
 // Define the margin of an svg element

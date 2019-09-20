@@ -1,6 +1,51 @@
 /* D3 */
 /* color Palette https://colorhunt.co/palette/135960 */
 
+body {
+  color: #03173F;
+  font-family: 'Ubuntu',
+    sans-serif;
+}
+
+a,
+a:visited {
+  color: #5384D3;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #2A6AD2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display',
+    serif;
+}
+
+header {
+  background-color: #acdbdf;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer {
+  background-color: #9692af;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+}
+
+.banner-container {
+  background-color: #F1F4F7;
+
+}
+
 .tooltip {
   position: absolute;
   width: 135px;
